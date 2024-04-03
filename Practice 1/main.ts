@@ -707,3 +707,361 @@
 // console.log(divideAndRemainder(10, 3)); // Shows { quotient: 3, remainder: 1 }
 // It shows how many times 3 goes into 10, and what's left over.
 // ----------------------------------------------------------------------------------------------------------------------
+// This function prints numbers from 1 to 5 using a loop
+// function printNumbersWithLet() {
+//    for (let i = 1; i <= 5; i++) {
+//        // Uses `let` for loop variable `i`
+//        console.log(i); // Logs numbers 1 through 5
+//    }
+//    // `i` is not accessible here, outside the loop, because it's defined with `let`
+// }
+
+// printNumbersWithLet();
+// This shows that `let` limits `i` to the loop, preventing errors from using `i` where it's not intended.
+// --------------------------------------------------------------------------------------------------------------
+// Using `let` for a variable that can be reassigned
+// let age = 40;
+// age = 41; // Works fine because `let` allows reassignment
+// console.log(age); // Shows 41
+
+// Trying to reassign a `const`-declared variable
+// const name = "John";
+// try {
+//    name = "Eda"; // This line will cause an error
+// } catch (error) {
+//    console.log("Error: Can't reassign a `const`-declared variable."); // This message is shown
+// }
+// This example illustrates that `const` prevents changing the variable once it's set.
+// ---------------------------------------------------------------------------------------------------------------
+// Demonstrating block scope
+// {
+//    let blockLet = "visible inside the block";
+//    const blockConst = "also only inside the block";
+//    console.log(blockLet); // Works fine here
+//    console.log(blockConst); // Also works fine here
+// }
+
+// try {
+//    console.log(blockLet); // This will fail
+// } catch (error) {
+//    console.log("`blockLet` is not accessible outside the block.");
+// }
+
+// try {
+//    console.log(blockConst); // This will also fail
+// } catch (error) {
+//    console.log("`blockConst` is not accessible outside the block.");
+// }
+// This shows that `let` and `const` keep variables safe inside the block where they're defined.
+// --------------------------------------------------------------------------------------------------------------
+// This function shows how to assign and update variable values
+// function updateVariable() {
+//    let number = 40; // Initially assigns the value 40
+//    console.log("Initial value:", number); // Logs the initial value
+
+//    number = 50; // Updates the value to 50
+//    console.log("Updated value:", number); // Logs the updated value
+// }
+
+// updateVariable();
+// We assign a value to a variable and then update it, showing how values can change.
+// --------------------------------------------------------------------------------------------------------------
+// This function swaps the values of two variables
+// function swapValues() {
+//    let a = 10, b = 20; // Initially, a is 10 and b is 20
+//    console.log("Before swap: a =", a, "b =", b);
+
+//    let temp = a; // Temporarily stores the value of a
+//    a = b; // Sets a to b's value
+//    b = temp; // Sets b to a's original value stored in temp
+
+//    console.log("After swap: a =", a, "b =", b); // Logs the swapped values
+// }
+
+// swapValues();
+// We use a temporary variable to hold one value while we swap them, like a magic trick!
+// ---------------------------------------------------------------------------------------------------------------
+// This function uses compound assignment operators for different operations
+// function useCompoundOperators() {
+//    let x = 6; // Starts with x equal to 6
+//    console.log("Initial x:", x);
+
+//    x += 3; // Adds 3 to x
+//    console.log("After addition:", x); // Shows x after addition
+
+//    x -= 2; // Subtracts 2 from x
+//    console.log("After subtraction:", x); // Shows x after subtraction
+
+//    x *= 5; // Multiplies x by 5
+//    console.log("After multiplication:", x); // Shows x after multiplication
+
+//    x /= 1; // Divides x by 1
+//    console.log("After division:", x); // Shows x after division
+// }
+
+// useCompoundOperators();
+// We simplify arithmetic operations on x using compound assignment operators, like a shortcut.
+// ----------------------------------------------------------------------------------------------------------------
+// This function adds two numbers and returns the result
+// function addNumbers(num1: number, num2: number): number {
+//    // Calculates the sum of num1 and num2
+//    return num1 + num2;
+// }
+
+// Calling the function with two numbers and logging the result
+// console.log(addNumbers(6, 8)); // Outputs 14
+// Here, we ask our function to add 5 and 7, and it tells us the answer is 14.
+// ----------------------------------------------------------------------------------------------------------------
+// This function greets a user by name, or greets an anonymous user if no name is provided
+// function greetUser(name: string = "anonymous") {
+//    // Says hello to the given name or to an anonymous user
+//    console.log(`Hello, ${name}!`);
+// }
+
+// Trying the function with a name and without
+// greetUser("John"); // Outputs: Hello, John!
+// greetUser(); // Outputs: Hello, anonymous!
+// We see how our function can say hello to someone by name, or just say hello if we don't know the name.
+// ----------------------------------------------------------------------------------------------------------------
+// Function declaration for squaring a number
+// function squareDeclaration(number: number): number {
+//    return number * number;
+// }
+
+// Function expression for squaring a number
+// const squareExpression = function(number: number): number {
+//    return number * number;
+// };
+
+// Using both functions to square the number 10
+// console.log(squareDeclaration(10)); // Outputs: 100
+// console.log(squareExpression(10)); // Outputs: 100
+// Both methods give us the same result, showing two different ways to create functions that do the same thing.
+// ----------------------------------------------------------------------------------------------------------------
+// This sets up an object for a car with specific details
+// let car = {
+//    make: "Honda",
+//    model: "Mehran",
+//    year: 2024
+// };
+
+// Accessing and showing the car's model
+// console.log(car.model); // Outputs: Mehran
+// We use dot notation (car.model) to get the model of the car from our object.
+// ----------------------------------------------------------------------------------------------------------------
+// Starting with our car object
+// let car = {
+//    make: "Honda",
+//    model: "Mehran",
+//    year: 2024
+// };
+
+// Adding a new property 'color' and updating 'year'
+// car.color = "black"; // Adds a new property 'color'
+// car.year = 2023; // Updates the 'year' property
+
+// Showing the updated car object
+// console.log(car); // Outputs the car object with the new color and updated year
+// Now our car is black and its model year is updated to 2023.
+// ----------------------------------------------------------------------------------------------------------------
+// This function shows every detail about an object
+// function logObjectProperties(obj: object) {
+//    for (let property in obj) {
+//        // Loops through each property in the object
+//        console.log(`${property}: ${obj[property]}`);
+//        // Shows the property name and its value
+//    }
+// }
+
+// Using the function with a car object
+// logObjectProperties({ make: "Honda", model: "Mehran", year: 2023, color: "black" });
+// It tells us each piece of information stored about the car.
+// ----------------------------------------------------------------------------------------------------------------
+// This function counts how many characters are in a string
+// function stringLength(str: string): number {
+//    return str.length; // Returns the number of characters in the string
+// }
+
+// Example: Measuring the length of a name
+// console.log(stringLength("John")); // Outputs: 4
+// We're simply asking how long the string "John" is, and it tells us there are 4 characters.
+// ----------------------------------------------------------------------------------------------------------------
+// This function changes a string to uppercase and then to lowercase
+// function convertCase(str: string) {
+//    let upperStr = str.toUpperCase(); // Converts to uppercase
+//    let lowerStr = str.toLowerCase(); // Converts to lowercase
+
+//    console.log("Uppercase:", upperStr, "Lowercase:", lowerStr);
+// }
+
+// Example: Changing the case of "Hello Nida"
+// convertCase("Hello Nida"); // Outputs: "Uppercase: HELLO NIDA Lowercase: hello nida"
+// We're showing the same text in all uppercase and then all lowercase.
+// ----------------------------------------------------------------------------------------------------------------
+// This function swaps "CSS" with "Python" in a sentence
+// function replaceCSSWithPython(sentence: string): string {
+//    return sentence.replace(/CSS/g, "Python");
+//    // Uses a regular expression with the 'g' flag for a global replacement
+// }
+
+// Example: Changing a programming language name in a sentence
+// console.log(replaceCSSWithPython("I love CSS and CSS is awesome!"));
+// Outputs: "I love Python and Python is awesome!"
+// Every "CSS" in the sentence is changed to "Python".
+// ----------------------------------------------------------------------------------------------------------------
+// This function finds where "code" first shows up in a text
+// function findCodePosition(str: string): number {
+//    return str.indexOf("code"); // Looks for "code" and tells where it found it
+// }
+
+// Example: Searching within a sentence
+// console.log(findCodePosition("Learn to code with CSS")); // Outputs the start position of "code"
+// It tells us the position number where "code" starts.
+// --------------------------------------------------------------------------------------------------------------
+// This function checks if a sentence has "CSS" in it
+// function hasCSS(str: string): boolean {
+//    return str.includes("CSS"); // Checks for "CSS" and returns true or false
+// }
+
+// Example: Seeing if a text mentions CSS
+// console.log(hasCSS("I love coding in CSS!")); // Outputs true or false based on the check
+// It simply says true if "CSS" is there, or false if it's not.
+// ---------------------------------------------------------------------------------------------------------------
+// This function takes out the first 10 characters from any text
+// function extractFirstTenChars(str: string): string {
+//    return str.substring(0, 10); // Gets characters from start to position 10
+// }
+
+// Example: Taking the first 10 characters of a sentence
+// console.log(extractFirstTenChars("Hello, CSS nida!")); // Shows the first 10 characters
+// It gives us a smaller piece of the original text, just the beginning part.
+// ----------------------------------------------------------------------------------------------------------------
+// This function rounds a decimal number to the nearest whole number
+// function roundToNearestInteger(num: number): number {
+//    return Math.round(num); // Rounds the number
+// }
+
+// Example: Rounding a decimal
+// console.log(roundToNearestInteger(5.8)); // Outputs: 6
+// console.log(roundToNearestInteger(5.5)); // Outputs: 6
+// This shows how the function rounds numbers either up or down.
+// ----------------------------------------------------------------------------------------------------------------
+// This function changes a string into a number
+// function convertStringToNumber(str: string): number {
+//    return parseFloat(str); // Converts the string to a number
+// }
+
+// Example: Turning a numeric string into a real number
+// console.log(convertStringToNumber("678.91")); // Outputs: 678.91
+// console.log(convertStringToNumber("99")); // Outputs: 99
+// We're taking strings that look like numbers and turning them into actual numbers.
+// ----------------------------------------------------------------------------------------------------------------
+// This function checks if a value is Not a Number (NaN)
+// function isValueNaN(value: any): boolean {
+//    return isNaN(value); // Checks and returns true if the value is NaN, false otherwise
+// }
+
+// Examples: Checking different values
+// console.log(isValueNaN("hello")); // Outputs: true, because "hello" isn't a number
+// console.log(isValueNaN(456)); // Outputs: false, because 456 is a number
+// This way, we can guard against unexpected non-numeric values in our calculations or inputs.
+// ----------------------------------------------------------------------------------------------------------------
+// Defines an array with three favorite fruits
+// let favoriteFruits: string[] = ["Orange", "Watermelon", "Pinnapple"];
+// favoriteFruits.push("Kiwi"); // Adds "Kiwi" to the end of the array
+
+// console.log(favoriteFruits); // Outputs: ['Orange', 'Watermelon', 'Pinnapple', 'Kiwi']
+// This line adds a new fruit to our list of favorites.
+// ----------------------------------------------------------------------------------------------------------------
+// This function removes the last element from an array and returns it
+// function removeLastElement<T>(arr: T[]): T | undefined {
+//    return arr.pop(); // Removes and returns the last element of the array
+// }
+
+// Example: Removing the last fruit from the array
+// const fruits: string[] = ["Orange", "Watermelon", "Pinnapple"];
+// console.log(removeLastElement(fruits)); // Outputs: 'Pinnapple'
+// console.log(fruits); // Outputs: ['Orange', 'Watermelon']
+// Here, we take out the last fruit and show the updated list.
+// ----------------------------------------------------------------------------------------------------------------
+// This function finds "Watermelon" in the fruits array and replaces it with "Kiwi"
+// function replaceWatermelonWithKiwi(fruits: string[]): void {
+//    const index = fruits.indexOf("Watermelon"); // Finds the index of "Watermelon"
+//    if (index !== -1) fruits[index] = "Kiwi"; // Replaces "Watermelon" with "Kiwi" if found
+// }
+
+// Example: Replacing "Watermelon" in the array
+// const fruits: string[] = ["Orange", "Watermelon", "Pinnapple"];
+// replaceWatermelonWithKiwi(fruits);
+// console.log(fruits); // Outputs: ['Orange', 'Kiwi', 'Pinnapple']
+// We're swapping "Watermelon" for "Kiwi" in our fruit list.
+// ----------------------------------------------------------------------------------------------------------------
+// Defines an array with some words
+// const words: string[] = ["Hello", "Nida", "Python", "CSS"];
+// Uses .map() to create a new array with the length of each word
+// const lengths: number[] = words.map(word => word.length);
+
+// console.log(lengths); // Outputs: [5, 4, 6, 3]
+// Each number in the new array represents the length of the corresponding word in the original array.
+// ---------------------------------------------------------------------------------------------------------------
+// This function filters an array, keeping only numbers greater than 20
+// function filterGreaterThanTen(numbers: number[]): number[] {
+//    return numbers.filter(number => number > 20);
+// }
+
+// Example: Filtering an array of numbers
+// const numbers: number[] = [5, 10, 15, 20, 25];
+// console.log(filterGreaterThanTen(numbers)); // Outputs: [25]
+// The new array contains only the numbers that are greater than 20.
+// ---------------------------------------------------------------------------------------------------------------
+// This function calculates the sum of all numbers in an array
+// function calculateSum(numbers: number[]): number {
+//    return numbers.reduce((accumulator, current) => accumulator + current, 0);
+// }
+
+// Example: Calculating the sum of an array of numbers
+// const numbers: number[] = [1, 2, 3, 4, 5];
+// console.log(calculateSum(numbers)); // Outputs: 15
+// It adds up all the numbers in the array, resulting in a single sum value.
+// ---------------------------------------------------------------------------------------------------------------
+// This function formats the current date as DD-MM-YYYY
+// function getCurrentDateFormatted(): string {
+//    const now = new Date();
+//    const day = String(now.getDate()).padStart(2, '0'); // Ensures the day is two digits
+//    const month = String(now.getMonth() + 1).padStart(2, '0'); // Adds 1 because months are 0-indexed
+//    const year = now.getFullYear();
+//    return `${day}-${month}-${year}`;
+// }
+
+// console.log(getCurrentDateFormatted()); // Outputs the current date in DD-MM-YYYY format
+// Shows today's date, neatly formatted.
+// ---------------------------------------------------------------------------------------------------------------
+// Calculates how many days are left until New Year's Day
+// function daysUntilNewYear(): number {
+//    const today = new Date();
+//    const newYear = new Date(today.getFullYear() + 1, 0, 1); // January 1st of next year
+//    const diff = newYear.getTime() - today.getTime(); // Difference in milliseconds
+//    const days = Math.ceil(diff / (1000 * 60 * 60 * 24)); // Converts to days
+//    return days;
+// }
+
+// console.log(daysUntilNewYear() + " days until New Year.");
+// Tells us how many days there are until the next New Year's Day.
+// ---------------------------------------------------------------------------------------------------------------
+// Generates a Date object for the next occurrence of a specific birthday
+// function getNextBirthday(month: number, day: number): Date {
+//    const today = new Date();
+//    let year = today.getFullYear();
+//    const birthday = new Date(year, month - 1, day); // Months are 0-indexed
+//    if (birthday < today) {
+//        // If the birthday this year has already passed, use next year's date
+//        birthday.setFullYear(year + 1);
+//    }
+//    return birthday;
+// }
+
+// Replace with your birth month and day
+// const nextBirthday = getNextBirthday(12, 25); // Example: December 25th
+// console.log("Next birthday on:", nextBirthday.toLocaleDateString());
+// Shows the date of the next birthday.
+// ---------------------------------------------------------------------------------------------------------------
