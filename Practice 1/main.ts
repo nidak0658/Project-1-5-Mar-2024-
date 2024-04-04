@@ -1065,3 +1065,23 @@
 // console.log("Next birthday on:", nextBirthday.toLocaleDateString());
 // Shows the date of the next birthday.
 // ---------------------------------------------------------------------------------------------------------------
+// Finds the square root of 144 using Math.sqrt()
+// const squareRoot: number = Math.sqrt(144);
+
+// console.log(squareRoot); // Outputs: 12
+// This line effectively calculates and shows the square root of 144.
+// ---------------------------------------------------------------------------------------------------------------
+// Generates a random integer between 1 and 10
+// function getRandomInt(): number {
+//    return Math.floor(Math.random() * 10) + 1;
+// }
+
+// console.log(getRandomInt()); // Outputs a random integer between 1 and 10
+// This function combines Math.random() with Math.floor() to create a random integer within our range.
+// ---------------------------------------------------------------------------------------------------------------
+// Calculates the absolute difference between -5 and 5
+// const difference: number = Math.abs(-5 - 5);
+
+// console.log(difference); // Outputs: 10
+// This line shows the absolute value of the difference between -5 and 5, ignoring the sign.
+// ----------------------------------------------------------------------------------------------------------------
