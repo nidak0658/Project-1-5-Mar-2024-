@@ -992,3 +992,28 @@
 // console.log(difference); // Outputs: 10
 // This line shows the absolute value of the difference between -5 and 5, ignoring the sign.
 // ---------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function returns a random boolean value
+// function getRandomBoolean() {
+//    return Math.random() > 0.4; // Returns true if the random number is greater than 0.4
+// }
+// console.log(getRandomBoolean()); // Outputs either true or false randomly
+// By comparing a random number to 0.4, we effectively get a true or false value randomly.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function generates a random hexadecimal color code
+// function getRandomHexColor() {
+//    const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
+//    return color; // Returns the random color code
+// }
+// console.log(getRandomHexColor()); // Outputs a random hex color code like #ff3e12
+// We generate a random number, convert it to hexadecimal, and ensure it's 6 characters long.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function simulates rolling a dice and returns a number between 1 and 6
+// function rollDice() {
+//    return Math.floor(Math.random() * 6) + 1; // Calculates a random integer from 1 to 6
+// }
+// console.log(rollDice()); // Outputs a random number between 1 and 6
+// Here, we mimic the action of rolling a dice and getting a result.
+// ----------------------------------------------------------------------------------------------------------------
