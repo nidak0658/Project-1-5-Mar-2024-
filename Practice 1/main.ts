@@ -1131,12 +1131,12 @@
 // Logical operators help us verify the number's divisibility by both 2 and 3.
 // ----------------------------------------------------------------------------------------------------------------
 // This function compares two strings, ignoring case sensitivity
-function areStringsEqualIgnoreCase(str1: string, str2: string): boolean {
-  // Converts both strings to lowercase before comparison
-  return str1.toLowerCase() === str2.toLowerCase();
-}
+// function areStringsEqualIgnoreCase(str1: string, str2: string): boolean {
+//  // Converts both strings to lowercase before comparison
+//  return str1.toLowerCase() === str2.toLowerCase();
+// }
 
-console.log(areStringsEqualIgnoreCase("nida", "Nida")); // Outputs: true
-console.log(areStringsEqualIgnoreCase("khan", "Khan")); // Outputs: false
+// console.log(areStringsEqualIgnoreCase("hard", "Hard")); // Outputs: true
+// console.log(areStringsEqualIgnoreCase("work", "Word")); // Outputs: false
 // We make both strings lowercase to ensure the comparison ignores case differences.
 // ----------------------------------------------------------------------------------------------------------------
