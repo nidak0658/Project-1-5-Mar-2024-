@@ -1017,3 +1017,33 @@
 // console.log(rollDice()); // Outputs a random number between 1 and 6
 // Here, we mimic the action of rolling a dice and getting a result.
 // ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function checks if a year is a leap year
+// function isLeapYear(year) {
+//    // Checks the conditions for a leap year
+//    return (year % 4 === 0 && year % 100 !== 0) || year % 400 === 0;
+// }
+// console.log(isLeapYear(2020)); // Outputs: true
+// console.log(isLeapYear(1900)); // Outputs: false
+// By using comparison operators, we can easily determine if a year is a leap year or not.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function checks if a number is divisible by both 2 and 3
+// function isDivisibleByTwoAndThree(number) {
+//    // Uses the modulo operator to check for no remainder
+//    return number % 2 === 0 && number % 3 === 0;
+// }
+// console.log(isDivisibleByTwoAndThree(12)); // Outputs: true
+// console.log(isDivisibleByTwoAndThree(14)); // Outputs: false
+// Logical operators help us verify the number's divisibility by both 2 and 3.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function compares two strings, ignoring case sensitivity
+// function areStringsEqualIgnoreCase(str1, str2) {
+//    // Converts both strings to lowercase before comparison
+//    return str1.toLowerCase() === str2.toLowerCase();
+// }
+// console.log(areStringsEqualIgnoreCase("hard", "Hard")); // Outputs: true
+// console.log(areStringsEqualIgnoreCase("work", "Word")); // Outputs: false
+// We make both strings lowercase to ensure the comparison ignores case differences.
+// ----------------------------------------------------------------------------------------------------------------
