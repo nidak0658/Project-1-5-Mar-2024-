@@ -1140,3 +1140,180 @@
 // console.log(areStringsEqualIgnoreCase("work", "Word")); // Outputs: false
 // We make both strings lowercase to ensure the comparison ignores case differences.
 // ----------------------------------------------------------------------------------------------------------------
+// Checks the current hour and logs "Good Morning" if it's before 12 PM
+// const currentTime = new Date();
+// if (currentTime.getHours() < 12) {
+//  console.log("Good Morning"); // It's morning if before 12 PM
+// }
+// This simple check helps us greet users appropriately based on the time of day.
+// ----------------------------------------------------------------------------------------------------------------
+// function assignGrade(score: number): string {
+//  if (score >= 90) {
+//    return "A";
+//  } else if (score >= 80) {
+//    return "B";
+//  } else if (score >= 70) {
+//    return "C";
+//  } else if (score >= 60) {
+//    return "D";
+//  } else {
+//    return "F";
+//  }
+// }
+
+// console.log(assignGrade(85)); // Outputs: B
+// console.log(assignGrade(55)); // Outputs: F
+// ----------------------------------------------------------------------------------------------------------------
+// This function categorizes a person's age group
+// function categorizeAge(age: number): string {
+//  if (age < 14) {
+//    return "child";
+//  } else if (age <= 20) {
+//    return "teenager";
+//  } else {
+//    return "adult";
+//  }
+// }
+
+// console.log(categorizeAge(13)); // Outputs: child
+// console.log(categorizeAge(19)); // Outputs: teenager
+// console.log(categorizeAge(25)); // Outputs: adult
+// Based on the age provided, we log the corresponding age group.
+// ----------------------------------------------------------------------------------------------------------------
+// Creates a new Map to store countries and their capitals
+// const countries = new Map<string, string>();
+// countries.set("United States", "United Kingdom, U.S."); // Adds United States to the Map
+// countries.set("Singapore", "Australia"); // Adds Singapore to the Map
+// countries.set("Korea", "China"); // Adds Korea to the Map
+
+// console.log(countries);
+// Logs the Map with the countries and their capitals.
+// ----------------------------------------------------------------------------------------------------------------
+// Answer of Q12:
+// Creates a new Map to store countries and their capitals
+// const countries = new Map<string, string>();
+// countries.set("United States", "United Kingdom, U.S."); // Adds United States to the Map
+// countries.set("Singapore", "Australia"); // Adds Singapore to the Map
+// countries.set("Korea", "China"); // Adds Korea to the Map
+
+// console.log(countries);
+// Logs the Map with the countries and their capitals.
+
+// Answer of Q13:
+// This function checks for "Germoney" in the Map and logs its capital
+// function logCapitalOfGermoney(countries: Map<string, string>): void {
+//  if (countries.has("Germoney")) {
+//    console.log(`The capital of Germoney is ${countries.get("Germoney")}`);
+//  } else {
+//    console.log("Germoney is not in the Map.");
+//  }
+// }
+
+// Assuming countries Map from Question 112
+// logCapitalOfGermoney(countries);
+// Checks if Germoney is in our Map and logs the capital if it exists.
+// ----------------------------------------------------------------------------------------------------------------
+// Creates a Map to store student IDs (keys) and names (values)
+// const students = new Map<number, string>();
+// students.set(1, "John");
+// students.set(2, "Eda");
+// students.set(3, "Maria");
+
+// Iterates over the Map and logs each student ID and name
+// students.forEach((name, id) => {
+//  console.log(`Student ID: ${id}, Name: ${name}`);
+// });
+// This loop goes through each student and logs their ID and name.
+// ----------------------------------------------------------------------------------------------------------------
+// This function logs the day of the week based on a number (1-7)
+// function logDayOfWeek(dayNumber: number): void {
+//  switch (dayNumber) {
+//    case 1:
+//      console.log("Sunday");
+//      break;
+//    case 2:
+//      console.log("Monday");
+//      break;
+//    case 3:
+//      console.log("Tuesday");
+//      break;
+//    case 4:
+//      console.log("Wednesday");
+//      break;
+//    case 5:
+//      console.log("Thursday");
+//      break;
+//    case 6:
+//      console.log("Friday");
+//      break;
+//    case 7:
+//      console.log("Saturday");
+//      break;
+//    default:
+//      console.log("Invalid day number");
+//      break;
+//  }
+// }
+
+// logDayOfWeek(3); // Outputs: Tuesday
+// Uses a switch statement to select the appropriate day based on the provided number.
+// -----------------------------------------------------------------------------------------------------------------
+// This function logs the season based on the month
+// function logSeason(month: number): void {
+//  switch (month) {
+//    case 12:
+//    case 1:
+//    case 2:
+//      console.log("Winter");
+//      break;
+//    case 3:
+//    case 4:
+//    case 5:
+//      console.log("Spring");
+//      break;
+//    case 6:
+//    case 7:
+//    case 8:
+//      console.log("Summer");
+//      break;
+//    case 9:
+//    case 10:
+//    case 11:
+//      console.log("Fall");
+//      break;
+//    default:
+//      console.log("Invalid month");
+//      break;
+//  }
+// }
+
+// logSeason(4); // Outputs: Spring
+// Multiple cases share the same code block to represent each season.
+// -----------------------------------------------------------------------------------------------------------------
+// This function evaluates a grade and logs the corresponding remark
+// function evaluateGrade(grade: string): void {
+//  switch (grade) {
+//    case "A":
+//      console.log("Excellent");
+//      break;
+//    case "B":
+//      console.log("Good");
+//      break;
+//    case "C":
+//      console.log("Fair");
+//      break;
+//    case "D":
+//      console.log("Poor");
+//      break;
+//    case "F":
+//      console.log("Fail");
+//      break;
+//    default:
+//      console.log("Invalid grade");
+//      break;
+//  }
+// }
+
+// evaluateGrade("B"); // Outputs: Good
+// Uses a switch statement to evaluate the grade and defaults to "Invalid grade" if no match is found.
+// ----------------------------------------------------------------------------------------------------------------
