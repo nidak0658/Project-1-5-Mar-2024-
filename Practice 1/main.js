@@ -1230,3 +1230,110 @@
 // evaluateGrade("B"); // Outputs: Good
 // Uses a switch statement to evaluate the grade and defaults to "Invalid grade" if no match is found.
 // ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This loop logs numbers from 1 to 10
+// for (let i = 1; i <= 10; i++) {
+//    console.log(i); // Logs the current value of i
+// }
+// Each iteration increases the value of i by 1, logging it until it reaches 10.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Initializes a counter
+// let count = 0;
+// This while loop runs until count is 5
+// while (count < 5) {
+//    console.log("Hello, World!"); // Logs "Hello, World!"
+//    count++; // Increments count by 1
+// }
+// Repeats logging "Hello, World!" 5 times, once per loop iteration.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Defines an array of favorite movies
+// const favoriteMovies = [
+//    "Final Destination",
+//    "Evil Death",
+//    "Harry Potter",
+//    "Leo",
+// ];
+// Uses a for...of loop to iterate through favoriteMovies
+// for (const movie of favoriteMovies) {
+//    console.log(movie); // Logs each movie name
+// }
+// Each movie in the array is logged to the console, one at a time.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This for loop counts from 1 to 10 but skips 5
+// for (let i = 1; i <= 10; i++) {
+//    if (i === 5) {
+//        continue; // Skips the rest of the loop for i = 5
+//    }
+//    console.log(i); // Logs numbers 1-4 and 6-10
+// }
+// It demonstrates how to use 'continue' to skip a specific iteration.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Initializes the counter at 10
+// let counter = 10;
+// This while loop counts down from 10 to 1 and stops at 5
+// while (counter > 0) {
+//    if (counter === 5) {
+//        break; // Exits the loop when counter reaches 5
+//    }
+//    console.log(counter);
+//    counter--; // Decrements the counter
+// }
+// Logs the countdown from 10 but stops abruptly when it hits 5.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// This function iterates through a string and logs each character until it finds a vowel
+// function logUntilVowel(str) {
+//    const vowels = "aeiouAEIOU";
+//    for (const char of str) {
+//        if (vowels.includes(char)) {
+//            console.log(`First vowel found: ${char}`);
+//            break; // Stops the loop at the first vowel found
+//        }
+//        console.log(char); // Logs each character until a vowel is encountered
+//    }
+// }
+// logUntilVowel("syzygy"); // Logs 's', 'y', 'z', 'y', and then 'First vowel found: y'
+// Demonstrates iterating through a string and stopping at the first vowel.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Defines an object with a name property and a method to return its name
+// const person = {
+//    name: "John",
+//    getName: function () {
+//        return this.name; // Uses 'this' to refer to the object itself and return its 'name' property
+//    },
+// };
+// console.log(person.getName()); // Outputs: John
+// This method correctly identifies and returns the object's 'name' property using 'this'.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// An object with multiple properties and a method that interacts with them using 'this'
+// const rectangle = {
+//    length: 3,
+//    width: 6,
+//    calculateArea: function () {
+//        return this.length * this.width; // 'this' accesses 'length' and 'width' properties of the object
+//    },
+// };
+// console.log(rectangle.calculateArea()); // Outputs: 18
+// The 'calculateArea' method uses 'this' to compute the area based on the object's own dimensions.
+// ----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Demonstrates 'this' behavior change in a nested function
+// const myObject = {
+//    property: "Value",
+//    outerMethod: function () {
+//        console.log(this.property); // Works as expected, logs "Value"
+//        const innerMethod = () => {
+//            console.log(this.property); // Still accesses myObject's 'property' due to arrow function capturing 'this' from outer scope
+//        };
+//        innerMethod();
+//    },
+// };
+// myObject.outerMethod();
+// This example shows that using an arrow function for the inner method preserves the 'this' context from the outer method.
+// ----------------------------------------------------------------------------------------------------------------------------------------
