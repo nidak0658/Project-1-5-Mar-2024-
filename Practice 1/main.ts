@@ -1546,3 +1546,27 @@
 // */
 // Shows how adding indentation to the JSON string makes it easier to read.
 // ----------------------------------------------------------------------------------------------------------------
+// Demonstrates using console.log() inside a loop to track variable values
+// for (let i = 1; i <= 5; i++) {
+//  console.log(`Iteration ${i}, i value:, i`); // Logs the current iteration number and the value of i
+// }
+// This loop iterates five times, logging the value of 'i' during each iteration to help with debugging.
+// ----------------------------------------------------------------------------------------------------------------
+// Demonstrates using a try-catch block to handle errors
+// try {
+//  // Intentionally cause an error
+//  throw new Error("Something went wrong");
+// } catch (error) {
+//  console.log(error.message); // Logs the error message
+// }
+// This code tries to execute a block that throws an error, and the catch block handles the error gracefully.
+// ----------------------------------------------------------------------------------------------------------------
+// Sample code snippet for setting a breakpoint
+// console.log("Before breakpoint");
+// Set a breakpoint on the following line using your browser's developer tools
+// console.log(
+//  "This line has a breakpoint set on it in the browser's developer tools"
+// );
+// console.log("After breakpoint");
+// To use breakpoints, open this code in your browser, open the developer tools, navigate to the Source tab, find this script, and click on the line number where you want to pause execution. When you reload or run your page, execution will pause at the breakpoint.
+// ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
