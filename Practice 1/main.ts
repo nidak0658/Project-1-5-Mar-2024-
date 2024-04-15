@@ -1455,3 +1455,94 @@
 // traditionalVsArrow.arrowFunction(); // Likely undefined, depending on the outer scope's 'this.value'
 // This code snippet illustrates the difference in how 'this' is determined in traditional functions versus arrow functions.
 // ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+// In another file where you want to use the add function:
+// import { add } from "./mathFunction";
+
+// console.log(add(2, 3)); // Outputs: 5
+// Demonstrates importing the add function from mathFunctions.ts and using it.
+
+// In file: mathFunctions.ts
+// export const add = (a: number, b: number): number => a + b;
+// This line exports an add function from mathFunctions.ts
+// ----------------------------------------------------------------------------------------------------------------
+// In file: Person.ts
+// export class Person {
+//  name: string;
+//  constructor(name: string) {
+//    this.name = name;
+//  }
+//  greet() {
+//    console.log(`Hello, my name is ${this.name}`);
+//  }
+// }
+// Exports the Person class
+
+// In another file:
+// import { Person } from "./Person";
+
+// const alice = new Person("Alice");
+// alice.greet(); // Outputs: Hello, my name is Alice
+// This snippet imports the Person class and uses it to create an instance.
+// ----------------------------------------------------------------------------------------------------------------
+// export default class Calculator {
+//  // Class definition
+// }
+
+// Importing named exports:
+// import { utilOne, utilTwo } from "./utils";
+
+// Importing a default export:
+// import Calculator from "./Calculator";
+
+// This code illustrates the syntax and usage differences between default and named exports.
+
+// Named export example in file: utils.ts
+// export const utilOne = () => {
+//  /*...*/
+// };
+// export const utilTwo = () => {
+//  /*...*/
+// };
+// ----------------------------------------------------------------------------------------------------------------
+// Defines a JavaScript object
+// const person = {
+//  name: "John",
+//  age: 40,
+//  city: "United States",
+// };
+
+// Converts the object into a JSON string
+// const jsonString = JSON.stringify(person);
+
+// console.log(jsonString); // Outputs: {"name":"John","age":40,"city":"United States"}
+// Demonstrates converting an object to a JSON string, making it easy to store or transmit.
+// ----------------------------------------------------------------------------------------------------------------
+// Defines a JSON string
+// const jsonString = '{"name":"John","age":40,"city":"United States"}';
+
+// Parses the JSON string back into a JavaScript object
+// const person = JSON.parse(jsonString);
+
+// console.log(person); // Outputs the original object
+// This snippet shows how to take a JSON string and convert it back into a JavaScript object.
+// ----------------------------------------------------------------------------------------------------------------
+// Reusing the person object from Question 133
+// const person = {
+//  name: "John",
+//  age: 40,
+//  city: "United States",
+// };
+
+// Converts the object into a JSON string with indentation
+// const jsonString = JSON.stringify(person, null, 2); // The '2' specifies the number of spaces to use as white space
+
+// console.log(jsonString);
+// /* Outputs:
+// {
+//  "name": "John",
+//  "age": 40,
+//  "city": "United States"
+// }
+// */
+// Shows how adding indentation to the JSON string makes it easier to read.
+// ----------------------------------------------------------------------------------------------------------------
