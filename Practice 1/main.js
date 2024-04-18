@@ -1502,3 +1502,41 @@
 // console.log("The 'await' keyword allows asynchronous, promise-based behavior to be written in a cleaner, more linear fashion.");
 // This demonstrates how 'await' improves readability and flow in asynchronous code.
 // ---------------------------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Creates a Promise that resolves with "Hello, Nida!" after 4 seconds
+// const helloPromise = new Promise((resolve) => {
+//    setTimeout(() => {
+//        resolve("Hello, Nida!");
+//    }, 4000);
+// });
+// helloPromise.then((message) => console.log(message));
+// After 4 seconds, "Hello, Nida!" will be logged to the console.
+// -----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Creates a Promise that either resolves or rejects based on a condition
+// const conditionalPromise = new Promise((resolve, reject) => {
+//    const success = Math.random() > 0.10; // Randomly choose success or failure
+//    if (success) {
+//        resolve("Success!");
+//    }
+//    else {
+//        reject(new Error("Failure"));
+//    }
+// });
+// conditionalPromise
+//    .then((result) => console.log(result)) // Handles a successful resolution
+//    .catch((error) => console.log(error.message)); // Handles a rejection
+// This code will randomly log either "Success!" or "Failure" based on the outcome of the promise.
+// -----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Example using Promise.all to wait for multiple promises to resolve
+// const promise1 = Promise.resolve(3);
+// const promise2 = 44;
+// const promise3 = new Promise((resolve) => {
+//    setTimeout(resolve, 200, "foo");
+// });
+// Promise.all([promise1, promise2, promise3]).then((values) => {
+//    console.log(values); // Outputs: [3, 44, "foo"]
+// });
+// This demonstrates how Promise.all waits for all promises to resolve and then logs the array of their results.
+// -----------------------------------------------------------------------------------------------------------------
