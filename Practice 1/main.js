@@ -1585,3 +1585,32 @@
 // });
 // Demonstrates a callback pattern where errors are handled gracefully.
 // -----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Uses setTimeout to log a message after a 4-second delay
+// setTimeout(() => {
+//    console.log("This message is shown after a 4-second delay.");
+// }, 4000);
+// This showcases how to use setTimeout to delay actions in your code.
+// -----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// console.log("Start");
+// setTimeout(() => {
+//    console.log("Callback executed"); // This gets queued to be executed by the event loop
+// }, 0);
+// console.log("End");
+// Although the timeout is 0, "Callback executed" is logged after "End" due to the event loop.
+// -----------------------------------------------------------------------------------------------------------------
+// "use strict";
+// Synchronous example
+// console.log("Before synchronous operation");
+// Simulate a synchronous blocking operation
+// for (let i = 0; i < 1e9; i++) { } // A long loop
+// console.log("After synchronous operation");
+// Asynchronous example
+// console.log("Before asynchronous operation");
+// setTimeout(() => {
+//    console.log("Asynchronous operation completed");
+// }, 2000);
+// console.log("After asynchronous operation setup");
+// Demonstrates how the rest of the code continues to execute without waiting for the asynchronous operation.
+// -----------------------------------------------------------------------------------------------------------------
